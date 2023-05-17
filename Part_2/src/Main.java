@@ -4,11 +4,11 @@ public class Main {
         Participant[] participants = {
                 new Human("Petro", 1000, 2),
                 new Cat("Barsik", 500, 3),
-                new Robot("Pylesos", 2000, 1)
+                new Robot("Pylesos", 2000, 4)
         };
 
         Obstacle[] obstacles = {
-                new Treadmill(800),
+                new Treadmill(900),
                 new Wall(1),
                 new Treadmill(1500),
                 new Wall(2),
@@ -27,9 +27,9 @@ public class Main {
             }
 
             if (didNotOvercomeObstacle) {
-                System.out.println(participant.getName() + " is out of the game");
+                System.out.println(participant.getName() + " is out of the game.");
             } else {
-                System.out.println(participant.getName() + " finished the course");
+                System.out.println(participant.getName() + " finished the path!");
             }
         }
     }
